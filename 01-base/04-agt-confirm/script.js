@@ -11,6 +11,45 @@
 
 (function() {
 
-    // your code here
+
+    var questionOne = prompt("What's your age?", "");
+    var questionTwo = prompt("What's your gender?", "");
+    var questionThree = prompt("Where do you live?", "");
+
+    var confirmation = alert(`so your age is ${questionOne}, you are a ${questionTwo} and you
+    live in ${questionThree}`);
+
+    var check =  confirm(`was the displayed info correct?`);
+
+    if (check === true) {
+        alert("thanks! :)");
+
+    } else {
+        var questionOne = prompt("What's your age?", "");
+        var questionTwo = prompt("What's your gender?", "");
+        var questionThree = prompt("Where do you live?", "");
+    
+        var confirmation = alert(`so your age is ${questionOne}, you are a ${questionTwo} and you
+        live in ${questionThree}`);
+    
+        var check =  confirm(`was the displayed info correct?`);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })();

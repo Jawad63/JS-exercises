@@ -11,6 +11,12 @@
 
 (function() {
 
-  // your code here
+  var question = prompt("Do you want some cake?", "");
+
+if (question === "yes") {
+  alert("congratulations son, U earned a slice of cake.");
+} else {
+  alert("Well more cake for me :)");
+}
 
 })();
