@@ -9,16 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    // to get the value of an input: document.getElementById("element-id").value
+function one() {
+    let a = parseInt(document.getElementById("op-one").value);
+    let b = parseInt(document.getElementById("op-two").value);
+    document.getElementById("result").innerHTML = (a + b);
 
-    var performOperation = function(operation) {
-        // perform the operation
-    };
+}
 
-    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
-        $btn.addEventListener("click", function() {
-            performOperation($btn.id);
-        });
-    });
-})();
+function two() {
+    let a = parseInt(document.getElementById("op-one").value);
+    let b = parseInt(document.getElementById("op-two").value);
+    document.getElementById("result").innerHTML = (a - b);
+}
+
+function three() {
+    let a = parseInt(document.getElementById("op-one").value);
+    let b = parseInt(document.getElementById("op-two").value);
+    document.getElementById("result").innerHTML = (a * b);
+}
+
+function four() {
+    let a = parseInt(document.getElementById("op-one").value);
+    let b = parseInt(document.getElementById("op-two").value);
+    document.getElementById("result").innerHTML = (a / b);
+}
