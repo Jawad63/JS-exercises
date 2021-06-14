@@ -2,37 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>BeCode/JavaScript - Background color (1)</title>
+        <title>BeCode/JavaScript - Sorting the numbers</title>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-        <!--
         <link rel="stylesheet" href="../../_shared/css/normalize.css" />
         <link rel="stylesheet" href="../../_shared/css/styles.css" />
-        -->
-
     </head>
     <body>
         <div class="container">
             <header>
                 <h1>BeCode / JavaScript</h1>
                 <h2>
-                    <strong>background color (1)</strong>
+                    <strong>Sorting the numbers</strong>
                 </h2>
             </header>
             <div class="content">
                 <section class="explain">
-                    <p>For each button, when clicked change the background color of the page to the one indicated.</p>
+                    <p>On click to the button, get the numbers displayed in the input, and display them sorted in ascending order.</p>
                 </section>
                 <section class="material">
-                    <div class="actions">
-                        <button type="button" id="red" onclick="a()">Red</button>
-
-                        <button type="button" id="green" onclick="b()">Green</button>
-
-                        <button type="button" id="yellow" onclick="c()">Yellow</button>
-
-                        <button type="button" id="blue" onclick="d()">Blue</button>
-                    </div>
+                    <form action="#" method="post">
+                        <div class="field">
+                            <label for="numbers">Numbers to sort:</label>
+                            <input type="text" name="numbers" id="numbers" readonly value="2, 4, 14, 10, 90, 23, 16" />
+                        </div>
+                        <div class="actions">
+                            <button type="button" id="run">Run the script</button>
+                        </div>
+                    </form>
                 </section>
             </div>
         </div>

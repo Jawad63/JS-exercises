@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function getNewColor() {
 
-    // your code here
-
-})();
+    var symbol, color;
+    symbol = "0123456789ABCDEF";
+    color = "#";
+    for (var i = 0; i < 6; i++) {
+        color = color + symbol[Math.floor(Math.random() * 16)];
+    }
+    document.body.style.background = color;
+};
