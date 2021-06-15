@@ -9,8 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+let i = prompt("enter here:", "");
 
-    // your code here
 
-})();
+for (i = 0; i <= 100; i++) {
+
+    if ((0 == i % 3) && (0 == i % 5)) {
+        console.log("FizzBuzz");
+    }
+
+    else if (0 == i % 3) {
+        console.log("Fizz");
+    }
+
+    else if (0 == i % 5) {
+        console.log("Buzz");
+    }
+
+    else {
+        console.log("simply number");
+    }
+}
+
+    
+
+
