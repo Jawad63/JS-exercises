@@ -9,25 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-let i = prompt("enter here:", "");
 
-
-for (i = 0; i <= 100; i++) {
-
-    if ((0 == i % 3) && (0 == i % 5)) {
-        console.log("FizzBuzz");
+let i = 0;
+while (i < 100) {
+    i++;
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log("FIZZBUZZ");
     }
 
-    else if (0 == i % 3) {
-        console.log("Fizz");
+    else if (i % 3 === 0) {
+        console.log("FIZZ");
     }
-
-    else if (0 == i % 5) {
-        console.log("Buzz");
+        
+    else if (i % 5 === 0) {
+        console.log("BUZZ");
     }
 
     else {
-        console.log("simply number");
+        console.log(i);
     }
 }
 
