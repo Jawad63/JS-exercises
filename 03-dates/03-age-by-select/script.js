@@ -9,8 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function test() {
+    var a = parseInt(document.getElementById("dob-day").value);
+    var b = parseInt(document.getElementById("dob-month").value);
+    var c = parseInt(document.getElementById("dob-year").value);
 
-    // your code here
-
-})();
+    console.log(a, b, c);
+}

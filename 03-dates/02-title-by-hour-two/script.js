@@ -9,10 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
-
-})();
+    var time = new Date();
+    if (time.getHours() < 62280) { // indicates if current time is less than 17:30 then it should print out hello :)
+        document.getElementById("target").innerHTML = "hello! :)";
+    } 
