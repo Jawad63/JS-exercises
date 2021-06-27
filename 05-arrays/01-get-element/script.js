@@ -26,8 +26,8 @@
         "cherry",
     ];
 
-    function btn() {
-    console.log(fruits[4]);
+document.getElementById("run").onclick = event => {
+    console.log(fruits[3]);
     }
 
 

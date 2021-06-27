@@ -11,8 +11,20 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    function currentTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        var days = date.getDay();
+        var minutes = date.getMinutes();
 
-    // your code here
 
+        var amPm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var strTime = date + ' ' + hours + ':' + minutes + ' ' + amPm;
+        return strTime;
+    }
+    document.getElementById("thedate").innerHTML = currentTime();
+    
 })();

@@ -9,21 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function a() {
+document.getElementById("red").onclick = () => {
     document.body.style.backgroundColor = "red";
 }
 
-function b() {
+document.getElementById("green").addEventListener("click", () => {
     document.body.style.backgroundColor = "green";
-}
+});
     
-function c() {
+
+document.getElementById("yellow").onclick = () => {
     document.body.style.backgroundColor = "yellow";
-}
+} 
 
-function d() {
+document.getElementById("blue").addEventListener("click", () => {
     document.body.style.backgroundColor = "blue";
+});
+
+// add:
+
+document.getElementById("white").onclick = () => {
+    document.body.style.backgroundColor = "white";
 }
-
-
-

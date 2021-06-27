@@ -11,45 +11,21 @@
 
 (function() {
 
-
-    var questionOne = prompt("What's your age?", "");
-    var questionTwo = prompt("What's your gender?", "");
-    var questionThree = prompt("Where do you live?", "");
-
-    var confirmation = alert(`so your age is ${questionOne}, you are a ${questionTwo} and you
-    live in ${questionThree}`);
-
-    var check =  confirm(`was the displayed info correct?`);
-
-    if (check === true) {
-        alert("thanks! :)");
-
-    } else {
-        var questionOne = prompt("What's your age?", "");
-        var questionTwo = prompt("What's your gender?", "");
-        var questionThree = prompt("Where do you live?", "");
+    function runProcess() {
+        let age = prompt("whats your age?", "");
+        let gender = prompt("what's your gender?", "");
+        let town = prompt("where u from", "");
     
-        var confirmation = alert(`so your age is ${questionOne}, you are a ${questionTwo} and you
-        live in ${questionThree}`);
-    
-        var check =  confirm(`was the displayed info correct?`);
+        let confirmation = confirm(`your age is ${age}, you're a ${gender} and you are from ${town}`);
+        
+        if (confirmation === false) {
+            runProcess();
+        }
     }
+
+    runProcess();
+
+
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })();

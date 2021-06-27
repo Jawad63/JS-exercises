@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
 
-})();
+    document.getElementById("run").onclick = () => {
+        let userInput = document.getElementById("color").value;
+
+        function changeColor() {
+            document.body.style.backgroundColor = (`#${userInput}`);
+        }
+        changeColor();
+}
+
+
+    
+
+

@@ -11,12 +11,14 @@
 
 (function() {
 
-  var question = prompt("Do you want some cake?", "");
+  var question = confirm("do you want some cake?", "");
 
-if (question === "yes") {
-  alert("congratulations son, U earned a slice of cake.");
-} else {
-  alert("Well more cake for me :)");
-}
+  if (question === true) {
+    alert("congratulations on the baby :)");
+  }
 
+  else {
+    alert("alright more cake for me");
+  }
+    
 })();

@@ -10,9 +10,9 @@
 // You will have time to focus on it later.
 
 function test() {
-    var a = parseInt(document.getElementById("dob-day").value);
-    var b = parseInt(document.getElementById("dob-month").value);
-    var c = parseInt(document.getElementById("dob-year").value);
+    var a = document.getElementById("dob-day").value;
+    var b = document.getElementById("dob-month").value;
+    var c = document.getElementById("dob-year").value;
 
-    console.log(a, b, c);
+    console.log(`${a}-${b}-${c}`);
 }

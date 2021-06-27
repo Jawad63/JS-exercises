@@ -33,3 +33,4 @@ function four() {
     let b = parseInt(document.getElementById("op-two").value);
     document.getElementById("result").innerHTML = (a / b);
 }
+

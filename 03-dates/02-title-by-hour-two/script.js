@@ -14,6 +14,10 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     var time = new Date();
-    if (time.getHours() < 62280) { // indicates if current time is less than 17:30 then it should print out hello :)
+    if (time.getHours() < 63000) {
         document.getElementById("target").innerHTML = "hello! :)";
-    } 
+    }
+    
+    else if (time.getHours() > 63000) {
+        document.getElementById("target").innerHTML = "Good evening";
+    }

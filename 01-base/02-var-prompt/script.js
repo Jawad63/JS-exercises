@@ -11,7 +11,7 @@
 
 (function() {
 
-    var name = prompt("Please enter your name", "");
-    alert(`Hello ${name}!`);
+    let name = prompt("please enter your name", "");
+    alert(`Hello, ${name}`)
 
 })();

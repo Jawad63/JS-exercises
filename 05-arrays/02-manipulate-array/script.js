@@ -24,11 +24,13 @@
         "cerise",
 ];
     
-function btn() {
-    fruits[fruits.indexOf("pomme")] = "banana";
-    fruits[fruits.indexOf("cerise")] = "kiwi";
-    
-    console.log(fruits);
+document.getElementById("run").onclick = event => {
+    fruits.shift(); // shift removes the first item in an array
+    fruits.pop(); // pop removes the last item in an array
+
+    fruits.unshift("banana");
+    fruits.push("kiwi");
+    console.log(fruits)
 }
 
 

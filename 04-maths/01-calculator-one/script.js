@@ -16,19 +16,19 @@ function first() {
 }
 
 function second() {
-    var a = parseInt(document.getElementById("op-one").value);
-    var b = parseInt(document.getElementById("op-two").value);
+    var a = document.getElementById("op-one").value;
+    var b = document.getElementById("op-two").value;
     document.getElementById("result").innerHTML = (a - b);
 }
 
 function third() {
-    var a = parseInt(document.getElementById("op-one").value);
-    var b = parseInt(document.getElementById("op-two").value);
+    var a = document.getElementById("op-one").value;
+    var b = document.getElementById("op-two").value;
     document.getElementById("result").innerHTML = (a * b);
 }
 
 function fourth() {
-    var a = parseInt(document.getElementById("op-one").value);
-    var b = parseInt(document.getElementById("op-two").value);
+    var a = document.getElementById("op-one").value;
+    var b = document.getElementById("op-two").value;
     document.getElementById("result").innerHTML = (a / b);
 }

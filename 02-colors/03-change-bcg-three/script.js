@@ -18,4 +18,5 @@ function getNewColor() {
         color = color + symbol[Math.floor(Math.random() * 16)];
     }
     document.body.style.background = color;
+    
 };

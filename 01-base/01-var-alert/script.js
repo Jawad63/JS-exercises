@@ -11,6 +11,6 @@
 
 (function () {
     
-    var intro = "hello world!";
-    alert(intro);
+    let newVariable = "Hello, World!";
+    alert(newVariable);
 })();

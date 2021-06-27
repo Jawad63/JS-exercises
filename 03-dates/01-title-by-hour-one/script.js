@@ -16,8 +16,12 @@
     // your code here
 
 var time = new Date();
+
 if (time.getHours() < 18) {
-    document.getElementById("target").innerHTML = "Hello";
+    document.getElementById("target").innerText = "Hello";
 }
 
+else if (time.getHours() > 18) {
+    document.getElementById("target").innerText = "Good evening :)";
+}
 
